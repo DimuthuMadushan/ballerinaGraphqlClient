@@ -48,6 +48,17 @@ function testQuery() {
                             }
                         }
                         }";
+    string introspection = "{
+                            __type(name: \"Person\") {
+                              name 
+                              fields {
+                                name 
+
+                                description
+                                type { name }
+                              }
+                            }
+                          }";
     
     gql.setQuery(nested_field);
     //gql.setOperationName("mutation");
@@ -58,4 +69,3 @@ function testQuery() {
         io:println(response);
     }
 }
-
