@@ -79,10 +79,10 @@ function testFunction () {
                             }
                           }";
     
-    gql.setQuery(nested_field);
+    gql.setQuery(introspection);
     //gql.setOperationName("mutation");
-    gql.bindInt("id", 4);
-    gql.bindBoolean("dir", false);
+    //gql.bindInt("id", 4);
+   // gql.bindBoolean("dir", false);
     var response = gql->execute();
     if (response is json) {
         io:println(response);
@@ -102,5 +102,3 @@ function afterSuiteFunc () {
     io:println("I'm the after suite function!");
 }
 
-
-//@test:Config{}

@@ -1,6 +1,6 @@
 
 import ballerina/io;
-
+import ballerina/http;
 #Add query into json object
 # +input - string query
 function setQuery(string input) {

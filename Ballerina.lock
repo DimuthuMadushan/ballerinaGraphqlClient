@@ -1,7 +1,4 @@
-[project]
-name = "dimuthu"
+org_name = "dimuthu"
 version = "0.1.0"
-lockfileversion = "1"
-ballerinaversion = "unknown"
-modules = []
-
+lockfile_version = "1.0.0"
+ballerina_version = "1.0.0"

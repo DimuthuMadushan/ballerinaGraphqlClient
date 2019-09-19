@@ -1,5 +1,4 @@
 
-import ballerina/io;
 import ballerina/http;
 
 # Object for Graphql endpoint
