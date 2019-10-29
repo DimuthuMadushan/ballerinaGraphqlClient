@@ -1,7 +1,7 @@
 #import graphql client
 import graphql;
 
-#configure graphql client endpoint
+#configure graphql server endpoint
 GraphqlConfiguratiuon graphql = {
     url:"http://localhost:8080"
 };
