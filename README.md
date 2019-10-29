@@ -31,7 +31,7 @@ The Ballerina GraphQL client allows you to send graphql queries through a graphq
 These are the steps of initilizing of GraphQL client. In here, record type ***GraphqlConfiguration*** and type ***Client*** are provided by the graphql client library.
 
 # How to send query
-After initiolizing the graphql client, a user can send a query using following steps.
+After initializing the graphql client, a user can send a query using following steps.
 
 1. Define a query as a ***string*** variable.
    ```
@@ -45,26 +45,25 @@ After initiolizing the graphql client, a user can send a query using following s
                             }
                         }";
     ```
-2. Now set the query using ***setquery*** function. 
+2. Now set the query using ***setQuery(string query)*** function. 
     ```
     graphql_client.setQuery(query);
     ```
 
-3. if the query has variable, it should be bound with appropriate values before send the query.
+3. if the query has variables, it should be bound with appropriate values before send the query.
     ```
     graphql_client.bindInt("id", 4);
     graphql_client.bindBoolean("dir", false);
     ```
     Note:
-        if you have string type or float type variables, you can use ***bindStirng(string name, string value)*** or ***bindFloat(string name, float value)*** functions.
+        if you have string type or float type variables, you can use ***bindString(string name, string value)*** or ***bindFloat(string name, float value)*** functions.
 
 4. You can set the operation type of query using ***setOperation(string OpName)*** function. If your query is **Query** operation type, you can skip this step.
 
 5. Now you can send the query using ***execute()*** remote function. It will return a json response.
    ```
    var response = graphql_client->execute();
-
-
+   ```
 # Complete Example
 ```
 import graphql;
