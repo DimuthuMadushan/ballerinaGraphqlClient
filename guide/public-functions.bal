@@ -4,7 +4,6 @@
 # +clientConfig - configurations of graphql client
 public type GraphqlConfiguration record{
     string url;
-    http:ClientEndpointConfig clientConfig = {};
 };
 
 
