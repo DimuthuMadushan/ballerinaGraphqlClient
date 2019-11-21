@@ -1,4 +1,4 @@
-# ballerina-GraphQL-Client
+# Ballerina-GraphQL-Client
 
 The Ballerina GraphQL client allows you to send graphql queries through a graphql endpoint. You can simply send your queries using client's inbuilt functions. It handles basic graphql query request requirements.
 
